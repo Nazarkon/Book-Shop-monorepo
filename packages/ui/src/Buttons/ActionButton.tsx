@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Stack, Text } from "@chakra-ui/react"
 
 interface ActionButtonProps {
     children: React.ReactNode;
@@ -7,18 +8,15 @@ interface ActionButtonProps {
 
 export function ActionButton({ children, onClick }: ActionButtonProps) {
     return (
-        <button
+        <Button
             onClick={onClick}
-            style={{
-                padding: '8px 16px',
-                backgroundColor: '#007bff',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer'
-            }}
+            colorPalette="red"
+            variant="solid"
+            size="md"
+            fontWeight="bold"
+            borderRadius="md"
         >
             {children}
-        </button>
+        </Button>
     );
 }

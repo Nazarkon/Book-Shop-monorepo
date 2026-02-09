@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "admin:dev": "pnpm --filter book-admin-app dev"
+    "admin:dev": "pnpm --filter book-admin-app dev",
+    "admin:format": "pnpm --filter book-admin-app format",
+    "admin:lint": "pnpm --filter book-admin-app lint"
   
   },
   "keywords": [],

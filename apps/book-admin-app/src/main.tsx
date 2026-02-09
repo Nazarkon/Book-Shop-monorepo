@@ -1,10 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { ChakraProvider, defaultSystem } from '@chakra-ui/react'
+import { BrowserRouter } from 'react-router-dom'
+import { AppRoutes } from './router'
+import { DrawerProvider } from './store/DrawerContext'
 import './index.css'
-import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <App />
+        <DrawerProvider>
+            <ChakraProvider value={defaultSystem}>
+                <BrowserRouter>
+                    <AppRoutes />
+                </BrowserRouter>
+            </ChakraProvider>
+        </DrawerProvider>
     </StrictMode>
 )
