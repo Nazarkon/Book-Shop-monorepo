@@ -26,7 +26,6 @@ export function NavigationMenu({
         <MenuList
             data={items}
             getKey={(item) => item.id}
-            getValue={(item) => item.value}
             renderItem={(item) => item.label}
             onItemClick={handleClick}
         />

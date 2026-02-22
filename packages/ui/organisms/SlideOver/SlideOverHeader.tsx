@@ -1,6 +1,6 @@
 import { DrawerHeader } from "@chakra-ui/react";
 import type { DrawerHeaderProps } from "@chakra-ui/react";
-import Heading from "../atoms/Heading/Heading";
+import Heading from "../../atoms/Heading/Heading";
 
 interface ISlideOverHeaderProps extends DrawerHeaderProps {
     title: string;
