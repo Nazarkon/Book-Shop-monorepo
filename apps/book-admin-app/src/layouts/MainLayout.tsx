@@ -18,6 +18,9 @@ const MainLayout = () => {
                         payload: { title: 'Add New Item', view: 'ADD_ITEM' },
                     })
                 }
+                colorPalette="blue"
+                variant="solid"
+                size="lg"
             >
                 Add New Item
             </ActionButton>

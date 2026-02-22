@@ -26,6 +26,6 @@
     },
     "include": [
         "src",
-        "../../packages/ui/src/components/maintenance/NotFound.tsx"
+        "../../packages/ui/src/atoms/maintenance/NotFound.tsx"
     ]
 }
